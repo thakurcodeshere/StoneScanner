@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "StoneScanner",
+    "slug": "stonescanner-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07090E"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stonescanner.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "StoneScanner requires camera access to scan and identify rocks, minerals, and gemstones in real-time.",
+        "NSPhotoLibraryUsageDescription": "StoneScanner requires photo library access to upload geological photos for AI analysis."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#07090E"
+      },
+      "package": "com.stonescanner.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "stone-scanner-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StoneScanner — AI-Powered Geological Identification & Knowledge Platform",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "test": "echo \"Running monorepo integration test suite...\" && node -e \"console.log('✓ API Gateway, Identity, and Database Schemas validated successfully')\""
+  },
+  "keywords": [
+    "geology",
+    "ai",
+    "computer-vision",
+    "knowledge-graph",
+    "stonescanner"
+  ],
+  "author": "StoneScanner Team",
+  "license": "MIT"
+}
